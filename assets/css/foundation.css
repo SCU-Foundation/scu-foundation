@@ -1,0 +1,404 @@
+/* =========================================================
+   SCU Foundation — Institutional Stylesheet (v3.0)
+   Fully rewritten, LP‑aligned structure, SCU‑branded
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. Design Tokens
+   --------------------------------------------------------- */
+
+:root {
+  /* Brand */
+  --scu-blue: #0A2A43;
+  --scu-blue-light: #1E5AA8;
+  --scu-text: #1A1A1A;
+  --scu-text-muted: #555;
+  --scu-bg: #FFFFFF;
+  --scu-bg-alt: #F7F7F7;
+  --scu-border: #E2E6EA;
+
+  /* Typography */
+  --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: "Crimson Pro", Georgia, serif;
+
+  /* Sizing */
+  --max-width: 960px;
+
+  /* Spacing */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 40px;
+  --space-xl: 64px;
+  --space-xxl: 85px;
+
+  /* Font sizes */
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-xxl: 2.25rem;
+  --fs-hero: 2.8rem;
+}
+
+/* ---------------------------------------------------------
+   2. Base
+   --------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--scu-bg);
+  color: var(--scu-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--scu-blue);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--scu-blue-light);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-sm);
+}
+
+/* ---------------------------------------------------------
+   3. Header + Navigation (LP‑aligned structure)
+   --------------------------------------------------------- */
+
+.site-header {
+  background: var(--scu-bg-alt);
+  border-bottom: 1px solid var(--scu-border);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  padding: var(--space-sm) var(--space-lg);
+  justify-content: space-between;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.site-logo img {
+  height: 60px;
+}
+
+.site-title {
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--scu-blue);
+}
+
+/* Navigation root */
+.site-nav {
+  background: var(--scu-bg-alt);
+}
+
+.nav-root {
+  display: flex;
+  gap: var(--space-md);
+  list-style: none;
+  margin: 0 var(--space-xxl) 0 0;
+  padding: 0;
+}
+
+/* Top-level nav items */
+.nav-item > a {
+  font-size: var(--fs-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 0;
+  display: inline-block;
+  color: var(--scu-blue);
+}
+
+/* Dropdowns */
+.has-dropdown {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  background: var(--scu-bg-alt);
+  border: 1px solid var(--scu-border);
+  padding: var(--space-xs) 0;
+  min-width: 220px;
+  display: none;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.dropdown li a {
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-sm);
+  color: var(--scu-blue);
+  white-space: nowrap;
+}
+
+.dropdown li a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Desktop dropdown activation */
+@media (min-width: 701px) {
+  .has-dropdown:hover > .dropdown {
+    display: flex;
+  }
+}
+
+/* Mobile hamburger */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+}
+
+.nav-toggle-bar {
+  width: 24px;
+  height: 2px;
+  background: var(--scu-text);
+}
+
+/* ---------------------------------------------------------
+   4. Identity Block (SCU‑specific)
+   --------------------------------------------------------- */
+
+.identity-block {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.identity-block img {
+  height: 256px;
+}
+
+.identity-title {
+  font-size: var(--fs-xxl);
+  font-weight: 700;
+  color: var(--scu-blue);
+}
+
+.identity-subtitle {
+  font-size: var(--fs-lg);
+  color: var(--scu-text-muted);
+  max-width: 720px;
+}
+
+/* ---------------------------------------------------------
+   5. Sections
+   --------------------------------------------------------- */
+
+.section {
+  margin: var(--space-xl) 0;
+}
+
+.section h2 {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+  color: var(--scu-blue);
+  margin-bottom: var(--space-sm);
+}
+
+/* ---------------------------------------------------------
+   6. Metadata Block
+   --------------------------------------------------------- */
+
+.metadata-block {
+  border: 1px solid var(--scu-border);
+  background: var(--scu-bg-alt);
+  padding: var(--space-md);
+  border-radius: 6px;
+  margin: var(--space-lg) 0;
+}
+
+.metadata-label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--scu-blue);
+}
+
+.metadata-value {
+  font-size: var(--fs-base);
+  color: var(--scu-text-muted);
+}
+
+/* ---------------------------------------------------------
+   7. Footer (LP‑aligned structure, SCU‑branded)
+   --------------------------------------------------------- */
+
+.site-footer {
+  border-top: 1px solid var(--scu-border);
+  background: var(--scu-bg-alt);
+  padding: var(--space-lg) 0 var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.site-footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  font-size: var(--fs-sm);
+  color: var(--scu-text-muted);
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-lg);
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 160px;
+}
+
+.footer-heading {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: var(--scu-text);
+  border-bottom: 1px solid var(--scu-border);
+  padding-bottom: 0.25rem;
+}
+
+.footer-column a {
+  color: var(--scu-text-muted);
+}
+
+.footer-column a:hover {
+  color: var(--scu-blue-light);
+}
+
+.footer-identity {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--scu-text-muted);
+}
+
+/* ---------------------------------------------------------
+   8. Responsive (LP‑aligned breakpoints)
+   --------------------------------------------------------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .site-header-inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "toggle logo"
+      "nav nav";
+    gap: var(--space-xs);
+  }
+
+  .nav-toggle {
+    display: flex;
+    grid-area: toggle;
+  }
+
+  .site-logo {
+    grid-area: logo;
+    justify-content: center;
+  }
+
+  .site-nav {
+    grid-area: nav;
+    display: none;
+    border-top: 1px solid var(--scu-border);
+    margin-top: var(--space-xs);
+  }
+
+  .site-nav.active {
+    display: block;
+  }
+
+  .nav-root {
+    flex-direction: column;
+    padding: var(--space-sm);
+  }
+
+  .has-dropdown .dropdown {
+    position: static;
+    border: none;
+    padding: 0 0 var(--space-sm) 0;
+    display: none;
+  }
+
+  .has-dropdown.open .dropdown {
+    display: flex;
+  }
+
+  .identity-block {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .identity-block img {
+    height: 128px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .site-title {
+    font-size: var(--fs-base);
+  }
+
+  .footer-column {
+    font-size: var(--fs-lg);
+  }
+}

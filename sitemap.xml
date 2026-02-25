@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Root -->
+  <url><loc>https://scu.foundation/</loc></url>
+  <url><loc>https://scu.foundation/about/</loc></url>
+  <url><loc>https://scu.foundation/contact/</loc></url>
+  <url><loc>https://scu.foundation/privacy/</loc></url>
+  <url><loc>https://scu.foundation/security/</loc></url>
+  <url><loc>https://scu.foundation/terms/</loc></url>
+
+  <!-- Governance -->
+  <url><loc>https://scu.foundation/governance/</loc></url>
+  <url><loc>https://scu.foundation/governance/architecture-model/</loc></url>
+  <url><loc>https://scu.foundation/governance/conceptual-frame/</loc></url>
+  <url><loc>https://scu.foundation/governance/institutional-structure/</loc></url>
+  <url><loc>https://scu.foundation/governance/proposal-lifecycle/</loc></url>
+  <url><loc>https://scu.foundation/governance/versioning-governance/</loc></url>
+  <url><loc>https://scu.foundation/governance/change-management/</loc></url>
+  <url><loc>https://scu.foundation/governance/transparency/</loc></url>
+  <url><loc>https://scu.foundation/governance/public-sector/</loc></url>
+  <url><loc>https://scu.foundation/governance/safety-governance/</loc></url>
+
+  <!-- Publications -->
+  <url><loc>https://scu.foundation/publications/</loc></url>
+  <url><loc>https://scu.foundation/whitepaper/</loc></url>
+  <url><loc>https://scu.foundation/whitepaper/versions/</loc></url>
+  <url><loc>https://scu.foundation/whitepaper/v1.5/</loc></url>
+  <url><loc>https://scu.foundation/whitepaper/v1.6/</loc></url>
+  <url><loc>https://scu.foundation/whitepaper/v1.7/</loc></url>
+  <url><loc>https://scu.foundation/whitepaper/v1.8/</loc></url>
+
+  <!-- Funding -->
+  <url><loc>https://scu.foundation/funding/</loc></url>
+  <url><loc>https://scu.foundation/funding/transparency/</loc></url>
+  <url><loc>https://scu.foundation/funding/grants/</loc></url>
+  <url><loc>https://scu.foundation/funding/formalisation/</loc></url>
+  <url><loc>https://scu.foundation/funding/stewardship/</loc></url>
+
+  <!-- Ecosystem -->
+  <url><loc>https://scu.foundation/ecosystem/</loc></url>
+
+  <!-- Sitemap -->
+  <url><loc>https://scu.foundation/sitemap.xml</loc></url>
+
+</urlset>

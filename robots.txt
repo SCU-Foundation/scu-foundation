@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://scu.foundation/sitemap.xml

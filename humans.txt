@@ -1,0 +1,12 @@
+/* TEAM */
+Developer & Steward: Allan
+Institution: SCU Foundation
+Website: https://scu.foundation
+
+/* THANKS */
+Thanks to the open research community exploring post‑silicon compute paradigms.
+
+/* TECHNOLOGY */
+Standards: HTML5, CSS3
+Hosting: Static deployment
+Purpose: Institutional stewardship of the SCU architecture

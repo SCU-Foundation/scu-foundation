@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Architecture Model | SCU Foundation</title>
+
+  <meta name="description" content="The Architecture Model defines the seven layer structure of the AI native internet and positions the SCU architectural definition, the Lattice Protocol, and the broader ecosystem within that model.">
+
+  <link rel="canonical" href="https://scu.foundation/governance/architecture-model/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0A2A43">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="icon" href="/assets/images/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="stylesheet" href="/assets/css/foundation.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <meta property="og:title" content="Architecture Model | SCU Foundation">
+  <meta property="og:description" content="Explore the seven layer Architecture Model that defines the structure of the AI native internet and the position of the SCU architectural definition and the Lattice Protocol.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://scu.foundation/governance/architecture-model/">
+  <meta property="og:image" content="https://scu.foundation/assets/images/og-default.png">
+  <meta property="og:site_name" content="SCU Foundation">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Architecture Model | SCU Foundation">
+  <meta name="twitter:description" content="The Architecture Model defines the seven layer structure of the AI native internet and the position of the SCU architectural definition and the Lattice Protocol.">
+  <meta name="twitter:image" content="https://scu.foundation/assets/images/og-default.png">
+
+  <script src="/assets/js/nav.js" defer></script>
+</head>
+
+
+<body>
+<div class="page-wrapper">
+ 
+ <!-- HEADER -->
+<header class="site-header">
+  <div class="site-header-inner">
+
+    <!-- Mobile Hamburger -->
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <!-- Brand -->
+    <a href="/" class="site-logo">
+      <img src="/assets/images/logo.png" alt="SCU Foundation logo">
+      <span class="site-title">SCU Foundation</span>
+    </a>
+
+    <!-- Primary Navigation -->
+    <nav class="site-nav" aria-label="Primary Navigation">
+      <ul class="nav-root">
+
+        <!-- Governance -->
+        <li class="nav-item has-dropdown">
+          <a href="/governance/">Governance</a>
+          <ul class="dropdown">
+            <li><a href="/governance/">Governance Overview</a></li>
+            <li><a href="/governance/architecture-model/">Architecture Model</a></li>
+            <li><a href="/governance/conceptual-frame/">Conceptual Frame</a></li>
+            <li><a href="/governance/institutional-structure/">Institutional Structure</a></li>
+            <li><a href="/governance/proposal-lifecycle/">Proposal Lifecycle</a></li>
+            <li><a href="/governance/versioning-governance/">Versioning Governance</a></li>
+            <li><a href="/governance/change-management/">Change Management</a></li>
+            <li><a href="/governance/public-sector/">Public‑Sector Alignment</a></li>
+            <li><a href="/governance/safety-governance/">Safety Governance</a></li>
+
+            <!-- NEW: Funding moved under Governance -->
+            <li><a href="/funding/">Funding & Formalisation</a></li>
+            <li><a href="/funding/transparency/">Transparency</a></li>
+            <li><a href="/funding/grants/">Grants</a></li>
+            <li><a href="/funding/formalisation/">Formalisation Roadmap</a></li>
+            <li><a href="/funding/stewardship/">Stewardship Policy</a></li>
+          </ul>
+        </li>
+
+        <!-- Publications -->
+        <li class="nav-item has-dropdown">
+          <a href="/publications/">Publications</a>
+          <ul class="dropdown">
+            <li><a href="/publications/">All Publications</a></li>
+            <li><a href="/whitepaper/">Whitepaper</a></li>
+            <li><a href="/whitepaper/versions/">Whitepaper Versions</a></li>
+          </ul>
+        </li>
+
+        <!-- Ecosystem -->
+        <li class="nav-item has-dropdown">
+          <a href="/ecosystem/">Ecosystem</a>
+          <ul class="dropdown">
+            <li><a href="/ecosystem/">SCU Ecosystem Overview</a></li>
+            <li><a href="https://latticeprotocol.org" target="_blank" rel="noopener noreferrer">Lattice Protocol</a></li>
+            <li><a href="https://lattice.institute" target="_blank" rel="noopener noreferrer">Lattice Research Institute</a></li>
+            <li><a href="https://post-silicon.org" target="_blank" rel="noopener noreferrer">Post‑Silicon Collective</a></li>
+          </ul>
+        </li>
+
+        <!-- Legal -->
+        <li class="nav-item has-dropdown">
+          <a href="/privacy/">Legal</a>
+          <ul class="dropdown">
+            <li><a href="/privacy/">Privacy</a></li>
+            <li><a href="/security/">Security Disclosure</a></li>
+            <li><a href="/terms/">Terms of Use</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+  <!-- MAIN -->
+<main class="site-main">
+  <div class="container">
+
+    <div class="identity-block">
+      <img src="/assets/images/logo.png" alt="SCU Foundation logo">
+      <h1 class="identity-title">Architecture Model</h1>
+    </div>
+
+    <p class="identity-subtitle">
+      The Architecture Model describes the seven layer structure of the AI native internet. It defines how governance, standards, semantics, trust, execution, data ingestion, and applications relate to one another. This model provides the canonical map that positions the SCU architectural definition, the Lattice Protocol, and the broader ecosystem.
+    </p>
+
+    <hr class="section-divider">
+
+    <!-- Purpose -->
+    <section class="section">
+      <h2>Purpose of the Architecture Model</h2>
+      <p>
+        The Architecture Model establishes the structural foundation for the SCU ecosystem. It defines the boundaries, responsibilities, and interactions between layers, ensuring that governance, semantics, and technical standards evolve in a coherent and future oriented manner.
+      </p>
+
+      <p>
+        This model sits above all technical specifications and informs how the SCU Foundation, the 
+        <a href="https://lattice.institute">Lattice Research Institute</a>, and the 
+        <a href="https://p-sc.cc">Post Silicon Collective</a> operate within the ecosystem.
+      </p>
+
+      <p>
+        For the conceptual framing of the ecosystem, see the 
+        <a href="/governance/conceptual-frame/">Conceptual Frame</a>.
+      </p>
+    </section>
+
+    <!-- The Seven Layers -->
+    <section class="section">
+      <h2>The Seven Layers of the AI Native Internet</h2>
+      <p>
+        The Architecture Model defines seven layers that together form the AI native internet. Each layer has a distinct purpose and boundary.
+      </p>
+
+      <ol>
+        <li>
+          <strong>Governance Root</strong>. Defines institutional authority, versioning rules, safety requirements, certification regimes, and public sector alignment. Governed by the SCU Foundation.
+        </li>
+
+        <li>
+          <strong>Protocol Layer</strong>. The canonical specification of the 
+          <a href="https://latticeprotocol.org">Lattice Protocol</a>. Defines identity, semantics, trust, packet formats, and capability access.
+        </li>
+
+        <li>
+          <strong>Semantic Layer</strong>. Research and development of the Lattice Language, semantic structures, and interpretability frameworks. Led by the 
+          <a href="https://lattice.institute">Lattice Research Institute</a>.
+        </li>
+
+        <li>
+          <strong>Trust Layer</strong>. Certification, attestation, provenance, and identity guarantees. Ensures that agents, devices, and runtimes operate under verifiable trust conditions.
+        </li>
+
+        <li>
+          <strong>Execution Layer</strong>. Agents, runtimes, and execution environments that implement the protocol. Includes certified devices and attested compute substrates.
+        </li>
+
+        <li>
+          <strong>Data Ingestion Layer</strong>. Perceptual inputs, domain separation, and safety boundaries that govern how agents receive and process information.
+        </li>
+
+        <li>
+          <strong>Application Layer</strong>. User facing systems, tools, and integrations that rely on the protocol and its guarantees.
+        </li>
+      </ol>
+
+      <p>
+        These layers form a coherent architecture that supports identity, safety, semantics, and trust across the AI native internet.
+      </p>
+    </section>
+
+    <!-- Relationship to Governance -->
+    <section class="section">
+      <h2>Relationship to Governance</h2>
+      <p>
+        Governance sits above and around all layers of the Architecture Model. It defines how standards evolve, how safety is enforced, how certification works, and how public sector adoption is supported.
+      </p>
+
+      <p>
+        For detailed governance processes, see:
+      </p>
+
+      <ul>
+        <li><a href="/governance/proposal-lifecycle/">Proposal Lifecycle</a></li>
+        <li><a href="/governance/change-management/">Change Management</a></li>
+        <li><a href="/governance/versioning-governance/">Versioning Governance</a></li>
+        <li><a href="/governance/safety-governance/">Safety Governance</a></li>
+        <li><a href="/governance/public-sector/">Public Sector Alignment</a></li>
+        <li><a href="/governance/institutional-structure/">Institutional Structure</a></li>
+      </ul>
+    </section>
+
+    <!-- Ecosystem Bodies -->
+    <section class="section">
+      <h2>Ecosystem Bodies</h2>
+      <p>
+        The Architecture Model defines how the three governance bodies operate across the layers.
+      </p>
+
+      <ul>
+        <li>
+          <strong>SCU Foundation</strong>. Governs the protocol, maintains canonical specifications, manages certification, and ensures long term neutrality.
+        </li>
+
+        <li>
+          <strong><a href="https://lattice.institute">Lattice Research Institute</a></strong>. Conducts semantic research, develops the Lattice Language, and submits proposals for future editions of the protocol.
+        </li>
+
+        <li>
+          <strong><a href="https://p-sc.cc">Post Silicon Collective</a></strong>. Explores post silicon compute and publishes long horizon signals that may inform future governance.
+        </li>
+      </ul>
+
+      <p>
+        These bodies operate independently to preserve neutrality and public good stewardship.
+      </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="section">
+      <h2>Contact</h2>
+      <p>
+        For questions about the Architecture Model or governance processes, please contact:
+      </p>
+
+      <div class="metadata-block">
+        <div class="metadata-label">Email</div>
+        <div class="metadata-value">
+          <a href="mailto:contact@scu.foundation">contact@scu.foundation</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+
+
+  <!-- FOOTER -->
+<footer class="site-footer">
+  <div class="site-footer-inner">
+
+    <div class="footer-columns">
+
+      <!-- SCU Foundation -->
+      <div class="footer-column">
+        <h3 class="footer-heading">SCU Foundation</h3>
+        <a href="/about/">About</a>
+        <a href="/governance/">Governance Overview</a>
+        <a href="/governance/architecture-model/">Architecture Model</a>
+        <a href="/governance/conceptual-frame/">Conceptual Frame</a>
+        <a href="/publications/">Publications</a>
+        <a href="/contact/">Contact</a>
+      </div>
+
+      <!-- Funding (NEW STRUCTURE) -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Funding</h3>
+        <a href="/funding/">Funding & Formalisation</a>
+        <a href="/funding/transparency/">Transparency</a>
+        <a href="/funding/grants/">Grants</a>
+        <a href="/funding/formalisation/">Formalisation Roadmap</a>
+        <a href="/funding/stewardship/">Stewardship Policy</a>
+      </div>
+
+      <!-- Publications -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Publications</h3>
+        <a href="/publications/">All Publications</a>
+        <a href="/whitepaper/">Whitepaper</a>
+        <a href="/whitepaper/versions/">Whitepaper Versions</a>
+      </div>
+
+      <!-- Ecosystem -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Ecosystem</h3>
+        <a href="/ecosystem/">SCU Ecosystem Overview</a>
+        <a href="https://latticeprotocol.org" target="_blank" rel="noopener noreferrer">Lattice Protocol</a>
+        <a href="https://lattice.institute" target="_blank" rel="noopener noreferrer">Lattice Research Institute</a>
+        <a href="https://post-silicon.org" target="_blank" rel="noopener noreferrer">Post‑Silicon Collective</a>
+      </div>
+
+      <!-- Legal & Community -->
+      <div class="footer-column">
+        <h3 class="footer-heading">Community & Policies</h3>
+        <a href="https://github.com/scu-foundation" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://reddit.com/r/SCUFoundation" target="_blank" rel="noopener noreferrer">Community Forum</a>
+        <a href="https://x.com/SCUFoundation" target="_blank" rel="noopener noreferrer">Updates</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/security/">Security Disclosure</a>
+        <a href="/terms/">Terms of Use</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </div>
+
+    </div>
+
+    <div class="footer-identity">
+      <p>&copy; 2026 <strong>SCU Foundation</strong> — Stewardship of open standards for global interoperability.</p>
+      <p>Institutional governance for the Lattice ecosystem.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+</div>
+</body>
+</html>

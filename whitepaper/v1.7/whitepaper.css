@@ -1,0 +1,413 @@
+/* =========================================================
+   SCU Foundation — ISO OBP Whitepaper Layout (Final Clean Version)
+   Applies ONLY to HTML Edition (scoped to .whitepaper-layout)
+   ========================================================= */
+
+/* -----------------------------------------
+   GLOBAL PAGE BACKGROUND (ISO outer grey)
+   ----------------------------------------- */
+body {
+  background: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  font-family: "Crimson Pro", serif;
+}
+
+/* -----------------------------------------
+   TWO-COLUMN ISO LAYOUT WRAPPER
+   ----------------------------------------- */
+.whitepaper-layout {
+  display: grid;
+  grid-template-columns: 1fr; /* only the content column */
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  /* reserve space for the fixed sidebar */
+  padding-left: 300px;
+}
+
+
+/* -----------------------------------------
+   LEFT SIDEBAR (ISO OBP STYLE)
+   ----------------------------------------- */
+.whitepaper-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 95%;
+  overflow-y: auto;
+
+  background: #f2f2f2;
+  border-right: 1px solid #d0d0d0;
+  padding: 1.5rem 1rem;
+  border-radius: 6px;
+  margin-bottom:5vh;
+}
+
+
+/* Sidebar heading */
+.whitepaper-nav h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Sidebar section headers */
+.whitepaper-nav summary {
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.4rem 0;
+  color: #333;
+}
+
+/* Sidebar lists */
+.whitepaper-nav ul {
+  list-style: none;
+  margin: 0.4rem 0 1rem 1rem;
+  padding: 0;
+}
+
+.whitepaper-nav li {
+  margin: 0.35rem 0;
+}
+
+.whitepaper-nav a {
+  color: #004c97;
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.whitepaper-nav a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------------
+   RIGHT CONTENT COLUMN (ISO CONTENT CARD)
+   ----------------------------------------- */
+.whitepaper-content {
+  background: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  max-width: 900px;
+  margin-bottom: 4rem;
+  font-family: "Crimson Pro", serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Breadcrumbs */
+.whitepaper-content .breadcrumbs {
+  background: #eef3f8;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+}
+
+.whitepaper-content .breadcrumbs a {
+  color: #004c97;
+  text-decoration: none;
+}
+
+.whitepaper-content .breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------------
+   TYPOGRAPHY (ISO SCALE)
+   ----------------------------------------- */
+.whitepaper-content h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: #004c97;
+}
+
+.whitepaper-content h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #004c97;
+}
+
+.whitepaper-content h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: #004c97;
+}
+
+.whitepaper-content p {
+  margin-bottom: 1.1rem;
+  font-size: 1.05rem;
+}
+
+/* -----------------------------------------
+   METADATA BLOCK (ISO STYLE)
+   ----------------------------------------- */
+.whitepaper-content .metadata-block {
+  border-left: 4px solid #004c97;
+  background: #ffffff;
+  padding: 1.5rem 1.5rem;
+  border-radius: 6px;
+  margin: 2.5rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.whitepaper-content .metadata-label {
+  font-family: "Inter", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #004c97;
+  margin-top: 1rem;
+}
+
+.whitepaper-content .metadata-label:first-of-type {
+  margin-top: 0;
+}
+
+.whitepaper-content .metadata-value {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* -----------------------------------------
+   LINKS
+   ----------------------------------------- */
+.whitepaper-content a {
+  color: #004c97;
+  text-decoration: none;
+}
+
+.whitepaper-content a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------------
+   MOBILE RESPONSIVE BEHAVIOR
+   ----------------------------------------- */
+@media (max-width: 900px) {
+  .whitepaper-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .whitepaper-nav {
+    position: relative;
+    height: auto;
+    max-height: none;
+    margin-bottom: 2rem;
+  }
+}
+/* -----------------------------------------
+   SUBSECTIONS (12.A, 14.A, TIMESTAMP)
+   ----------------------------------------- */
+.whitepaper-subsection {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #dcdcdc;
+}
+
+/* -----------------------------------------
+   GLOSSARY (Appendix A)
+   ----------------------------------------- */
+.glossary dt {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: #004c97;
+  margin-top: 1.2rem;
+}
+
+.glossary dd {
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+}
+
+/* -----------------------------------------
+   ACTIVE SIDEBAR LINK
+   ----------------------------------------- */
+.whitepaper-nav a.active {
+  font-weight: 700;
+  color: #002f5e;
+  border-left: 3px solid #004c97;
+  padding-left: 6px;
+}
+/* -----------------------------------------
+   SCU GENERATIONAL SUMMARY TABLE (Appendix B)
+   ----------------------------------------- */
+.scu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 1.05rem;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Header */
+.scu-table thead th {
+  background: #004c97;
+  color: #ffffff;
+  text-align: left;
+  padding: 0.9rem 1rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Body cells */
+.scu-table td {
+  padding: 1rem;
+  vertical-align: top;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Last row cleanup */
+.scu-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Alternating row shading (ISO subtle) */
+.scu-table tbody tr:nth-child(even) {
+  background: #f7f9fc;
+}
+
+/* Lists inside table cells */
+.scu-table ul {
+  margin: 0.4rem 0 0 1.2rem;
+  padding: 0;
+}
+
+.scu-table li {
+  margin: 0.25rem 0;
+}
+
+/* Generation labels */
+.scu-table td strong {
+  font-family: "Inter", sans-serif;
+  color: #004c97;
+  font-weight: 700;
+}
+.faq-block {
+  margin: 1.2rem 0;
+  padding: 0.8rem 1rem;
+  border-left: 3px solid #444;
+  background: #fafafa;
+}
+
+.faq-block h3 {
+  margin: 0 0 0.4rem 0;
+  font-weight: 600;
+}
+
+.faq-block p {
+  margin: 0;
+}
+.roadmap-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: #fafafa;
+}
+
+.roadmap-table th {
+  text-align: left;
+  padding: 0.8rem;
+  background: #eaeaea;
+  font-weight: 600;
+  border-bottom: 2px solid #ccc;
+}
+
+.roadmap-table td {
+  vertical-align: top;
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.roadmap-table ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+    .cover-page {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 90vh;
+      padding: 2rem;
+    }
+
+    .cover-title {
+      font-family: 'Crimson Pro', serif;
+      font-size: 3.2rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .cover-subtitle {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .cover-meta {
+      font-size: 1.1rem;
+      margin-bottom: 4rem;
+      color: #555;
+    }
+
+    .cover-logos {
+      display: flex;
+      gap: 4rem;
+      margin-top: 3rem;
+      opacity: 0.9;
+    }
+
+    .cover-logos img {
+      height: 70px;
+      width: auto;
+    }
+/* -----------------------------------------
+   BACK TO TOP LINK (Global for all pages)
+   ----------------------------------------- */
+.back-to-top {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #dcdcdc;
+  text-align: right;
+}
+
+.back-to-top a {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #004c97;
+  text-decoration: none;
+}
+
+.back-to-top a:hover {
+  text-decoration: underline;
+}
+
+
